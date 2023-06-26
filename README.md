@@ -28,16 +28,20 @@ Figure 4 Alternate model with 6 month training window
 ![alternate model 6month training](/Starter_Code/images/alternatemodel_6month.png)
 
 # Modified models SMA_Fast and SMA_Slow to 10 and 90 days respectively
-### **NOTE:** The training window for this model was 3 months 
+### **NOTE:** The training window for this model was 6 months 
 
 Figure 5 Baseline model (SMA_Fast) = 10 (SMA_Slow) = 90 days
-![baseline 3month training 10 and 90days](/Starter_Code/images/baseline_3month_window_10_90days.png)
+![baseline 3month training 10 and 90days](/Starter_Code/images/baseline_6month_window_10_90days.png)
 
 Figure 6 Alternate model (SMA_Fast) = 10 (SMA_Slow) = 90 days
-![alternate model 3month training 10 and 90days](/Starter_Code/images/alternatemodel_3month_window_10_90days.png)
+![alternate model 3month training 10 and 90days](/Starter_Code/images/alternatemodel_6month_window_10_90days.png)
 
 # Evaluation Report (Summary & Analysis)
-After comparing the results of the models after backtesting and classification, it is my recommendation that we use a Decision Tree Classifier model, with a 3 month training span, and a 10 day fast and 90 slow simple moving averages (SMA). Th
+After comparing the results of the models after backtesting and classification, it is my recommendation that we use the SVM (Support Vector Machine) model, with a 6 month training span, and a 10 day fast and 90 slow simple moving averages (SMA). The predicted returns from this model trended better with the actual returns. The accuracy of the model was 56%, with a precision of predicting positive returns of 56% and a recall of 99%. 
+
+Figure 7 Classification Table for Recommended model.
+![classifcation report](/Starter_Code/images/classification_report.png)
+
 
 ## Baseline & Alternate Model Training Window = 3 months, SMA_Fast = 4 days, SMA_Slow = 100
 * The inital baseline model (Figure 1) shows that the SVM model was prediciting values pre-2020 on trend with actual returns. Howver, after 2020 the model was predicting returns above trend of actual returns. 
@@ -48,4 +52,5 @@ After comparing the results of the models after backtesting and classification, 
 * The alternate model shifted but still had instances where it trended the opposite of the actuals
 
 ## Baseline & Alternate Model Training Window = 3 months, SMA_Fast = 10 days, SMA_Slow = 90 days
-* The baseline model 
+* The baseline model predicted returns were trending above the actual returns prior to 2020. After 2020 trends for both the actual returns and predicted returns were similar.
+* The alternate model predicted returns did not trend well with the actual returns and therefore was not a good model.  
