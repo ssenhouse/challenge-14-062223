@@ -30,10 +30,12 @@ Figure 3
 Figure 4
 ![alternate model 6month training](/Starter_Code/images/alternatemodel_6month.png)
 
-# Modified models with 3 month training window but increase Short term moving average fast (SMA_Fast) to 10 days and long term moving average (SMA_Slow) to 90 days
+# Modified models Short term moving average fast (SMA_Fast) = 10 days and Long term moving average (SMA_Slow) = 90 days
 
 Figure 5
 ![baseline 3month training 10 and 90days](/Starter_Code/images/baseline_3month_window_10_90days.png)
 
 Baseline model using the training period to 3 months and the SMA_Fast = 10 day moving average, and SMA_Slow = 90 day moving average
 
+Figure 6
+![alternate model 3month training 10 and 90days](/Starter_Code/images/alternatemodel_3month_window_10_90days.png)
