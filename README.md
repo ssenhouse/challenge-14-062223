@@ -16,26 +16,22 @@
 Figure 1 Baseline model
 ![baseline model](/Starter_Code/images/baseline.png)
 
-The initial model has a 55% accuracy 
-
 Figure 2 Alternate Model 1
 ![alternatemodel](/Starter_Code/images/alternatemodel.png)
 
-The Alternate Model used a DecisionTreeClassifier model 
-
 # Modified models increase the training data from 3 months to 6 months
-Figure 3
+
+Figure 3 Baseline Model with 6 month training window
 ![baseline_6month training](/Starter_Code/images/baseline_6month.png)
 
-Figure 4
+Figure 4 Alternate model with 6 month training window
 ![alternate model 6month training](/Starter_Code/images/alternatemodel_6month.png)
 
-# Modified models Short term moving average fast (SMA_Fast) = 10 days and Long term moving average (SMA_Slow) = 90 days
+# Modified models SMA_Fast and SMA_Slow to 10 and 90 days respectively
 
-Figure 5
+Figure 5 Baseline model (SMA_Fast) = 10 (SMA_Slow) = 90 days
 ![baseline 3month training 10 and 90days](/Starter_Code/images/baseline_3month_window_10_90days.png)
 
-Baseline model using the training period to 3 months and the SMA_Fast = 10 day moving average, and SMA_Slow = 90 day moving average
 
-Figure 6
+Figure 6 Alternate model (SMA_Fast) = 10 (SMA_Slow) = 90 days
 ![alternate model 3month training 10 and 90days](/Starter_Code/images/alternatemodel_3month_window_10_90days.png)
