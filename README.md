@@ -28,10 +28,24 @@ Figure 4 Alternate model with 6 month training window
 ![alternate model 6month training](/Starter_Code/images/alternatemodel_6month.png)
 
 # Modified models SMA_Fast and SMA_Slow to 10 and 90 days respectively
+### **NOTE:** The training window for this model was 3 months 
 
 Figure 5 Baseline model (SMA_Fast) = 10 (SMA_Slow) = 90 days
 ![baseline 3month training 10 and 90days](/Starter_Code/images/baseline_3month_window_10_90days.png)
 
-
 Figure 6 Alternate model (SMA_Fast) = 10 (SMA_Slow) = 90 days
 ![alternate model 3month training 10 and 90days](/Starter_Code/images/alternatemodel_3month_window_10_90days.png)
+
+# Evaluation Report (Summary & Analysis)
+After comparing the results of the models after backtesting and classification, it is my recommendation that we use a Decision Tree Classifier model, with a 3 month training span, and a 10 day fast and 90 slow simple moving averages (SMA). Th
+
+## Baseline & Alternate Model Training Window = 3 months, SMA_Fast = 4 days, SMA_Slow = 100
+* The inital baseline model (Figure 1) shows that the SVM model was prediciting values pre-2020 on trend with actual returns. Howver, after 2020 the model was predicting returns above trend of actual returns. 
+* The alternate model was not useful in that it predicted the oppositive of the actual trends. 
+
+## Baseline & Alternate Model Training Window = 6 months, SMA_Fast = 4 days, SMA_Slow = 100
+* The baseline model was under trend prior to 2020, and over actual trend post 2020
+* The alternate model shifted but still had instances where it trended the opposite of the actuals
+
+## Baseline & Alternate Model Training Window = 3 months, SMA_Fast = 10 days, SMA_Slow = 90 days
+* The baseline model 
